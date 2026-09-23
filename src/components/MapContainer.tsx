@@ -1,11 +1,4 @@
-import { MutableRefObject } from 'react';
-import type { Map } from 'maplibre-gl';
-
-interface MapContainerProps {
-  mapRef?: MutableRefObject<Map | null>;
-}
-
-export function MapContainer(_props: MapContainerProps) {
+export function MapContainer() {
   return (
     <div
       id="map-container"

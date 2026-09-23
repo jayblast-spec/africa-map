@@ -1,16 +1,9 @@
-import { useRef } from 'react';
-import type { Map } from 'maplibre-gl';
 import { MapContainer } from './components/MapContainer';
 import { useMapInstance } from './hooks/useMapInstance';
 
 export function App() {
-  const mapRef = useRef<Map | null>(null);
-
   // Initialize map hook
-  const localMapRef = useMapInstance('map-container');
-
-  // Sync the local map ref to the prop ref
-  mapRef.current = localMapRef.current;
+  useMapInstance('map-container');
 
   return (
     <div className="w-full h-full flex flex-col">
@@ -23,7 +16,7 @@ export function App() {
         </p>
       </header>
       <main className="flex-1 w-full">
-        <MapContainer mapRef={mapRef} />
+        <MapContainer />
       </main>
     </div>
   );
