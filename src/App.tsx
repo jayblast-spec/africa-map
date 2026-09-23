@@ -1,9 +1,15 @@
+import { useRef, MutableRefObject } from 'react';
 import { MapContainer } from './components/MapContainer';
-import { useMapInstance } from './hooks/useMapInstance';
+import { ProjectionToggle } from './components/ProjectionToggle';
+import { useProjection } from './hooks/useProjection';
 
 export function App() {
-  // Initialize map hook
-  useMapInstance('map-container');
+  const mapRef = useRef<any | null>(null);
+  const { projection, toggleProjection } = useProjection(mapRef);
+
+  const handleMapReady = (ref: MutableRefObject<any | null>) => {
+    mapRef.current = ref.current;
+  };
 
   return (
     <div className="w-full h-full flex flex-col">
@@ -15,8 +21,9 @@ export function App() {
           Discover Africa&apos;s true size
         </p>
       </header>
-      <main className="flex-1 w-full">
-        <MapContainer />
+      <main className="flex-1 w-full relative">
+        <MapContainer onMapReady={handleMapReady} />
+        <ProjectionToggle projection={projection} onToggle={toggleProjection} />
       </main>
     </div>
   );
