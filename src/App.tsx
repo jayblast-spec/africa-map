@@ -2,10 +2,12 @@ import { useRef, MutableRefObject } from 'react';
 import { MapContainer } from './components/MapContainer';
 import { ProjectionToggle } from './components/ProjectionToggle';
 import { useProjection } from './hooks/useProjection';
+import { useTerrainLayer } from './hooks/useTerrainLayer';
 
 export function App() {
   const mapRef = useRef<any | null>(null);
   const { projection, toggleProjection } = useProjection(mapRef);
+  useTerrainLayer(mapRef);
 
   const handleMapReady = (ref: MutableRefObject<any | null>) => {
     mapRef.current = ref.current;

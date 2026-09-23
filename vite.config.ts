@@ -7,6 +7,9 @@ export default defineConfig({
     port: 5173,
     open: true,
   },
+  optimizeDeps: {
+    exclude: ['maplibre-gl'],
+  },
   build: {
     outDir: 'dist',
     sourcemap: false,
