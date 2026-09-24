@@ -14,11 +14,28 @@ export function useMapInstance(
     const container = document.getElementById(containerId);
     if (!container || mapRef.current) return;
 
-    // Create map instance
+    // Create map instance with inline style
     mapRef.current = new Map({
       container: containerId,
-      style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
-      center: [20, 0], // Africa center: longitude 20, latitude 0
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: 'raster',
+            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            tileSize: 256,
+            attribution: '© OpenStreetMap contributors'
+          }
+        },
+        layers: [
+          {
+            id: 'osm',
+            type: 'raster',
+            source: 'osm'
+          }
+        ]
+      },
+      center: [20, 0],
       zoom: 3,
       pitch: 0,
       bearing: 0,
@@ -27,7 +44,6 @@ export function useMapInstance(
     // Log when map loads
     mapRef.current.on('load', async () => {
       console.log('Map loaded');
-      // Apply initial projection
       if (mapRef.current && initialProjection !== 'mercator') {
         await applyProjection(mapRef.current, initialProjection);
       }
