@@ -154,9 +154,9 @@ export function App() {
           Discover Africa&apos;s true geographical size and proportions
         </p>
       </header>
-      <main className="flex-1 w-full flex overflow-hidden">
+      <main className="flex-1 w-full h-full flex overflow-hidden">
         {/* Sidebar Drawer */}
-        <div className={`transition-all duration-300 ${showDrawer ? 'w-80 sm:w-96' : 'w-0'} bg-white border-r border-gray-200 overflow-y-auto shadow-lg`}>
+        <div className={`transition-all duration-300 flex-shrink-0 ${showDrawer ? 'w-80 sm:w-96' : 'w-0'} bg-white border-r border-gray-200 overflow-y-auto shadow-lg h-full`}>
           {showDrawer && (
             <div className="p-6 space-y-6">
               <Legend />
@@ -171,7 +171,7 @@ export function App() {
         </div>
 
         {/* Map Area */}
-        <div className="flex-1 relative overflow-hidden">
+        <div className="flex-1 relative overflow-hidden h-full">
           <MapContainer onMapReady={handleMapReady} />
 
           {/* Toggle Drawer Button */}
