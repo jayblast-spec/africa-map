@@ -1,0 +1,373 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Lagos",
+        "country": "Nigeria",
+        "type": "port",
+        "capacity_containers_per_year": 1200000,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [3.25, 6.45]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Tema",
+        "country": "Ghana",
+        "type": "port",
+        "capacity_containers_per_year": 900000,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.03, 5.78]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Durban",
+        "country": "South Africa",
+        "type": "port",
+        "capacity_containers_per_year": 3100000,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.05, -29.87]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Alexandria",
+        "country": "Egypt",
+        "type": "port",
+        "capacity_containers_per_year": 500000,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.95, 31.18]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dar es Salaam Port",
+        "country": "Tanzania",
+        "type": "port",
+        "capacity_containers_per_year": 480000,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.20, -6.80]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mombasa Port",
+        "country": "Kenya",
+        "type": "port",
+        "capacity_containers_per_year": 750000,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.67, -4.04]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kinshasa Inland Port",
+        "country": "Democratic Republic of Congo",
+        "type": "port",
+        "capacity_containers_per_year": 150000,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.31, -4.25]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Addis Ababa Bole International",
+        "country": "Ethiopia",
+        "type": "airport",
+        "runways": 2,
+        "passengers_per_year_millions": 13.6,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.61, 9.02]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nnamdi Azikiwe International",
+        "country": "Nigeria",
+        "type": "airport",
+        "runways": 2,
+        "passengers_per_year_millions": 8.2,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.43, 9.01]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "O.R. Tambo International",
+        "country": "South Africa",
+        "type": "airport",
+        "runways": 3,
+        "passengers_per_year_millions": 20.0,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.24, -26.14]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cairo International",
+        "country": "Egypt",
+        "type": "airport",
+        "runways": 3,
+        "passengers_per_year_millions": 16.1,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.41, 30.12]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kotoka International",
+        "country": "Ghana",
+        "type": "airport",
+        "runways": 2,
+        "passengers_per_year_millions": 4.6,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.06, 5.61]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kenyatta International",
+        "country": "Kenya",
+        "type": "airport",
+        "runways": 2,
+        "passengers_per_year_millions": 7.8,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.04, -3.73]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Julius Nyerere International",
+        "country": "Tanzania",
+        "type": "airport",
+        "runways": 2,
+        "passengers_per_year_millions": 2.1,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.20, -6.86]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Entebbe International",
+        "country": "Uganda",
+        "type": "airport",
+        "runways": 1,
+        "passengers_per_year_millions": 1.7,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.44, 0.04]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "N'djili International",
+        "country": "Democratic Republic of Congo",
+        "type": "airport",
+        "runways": 2,
+        "passengers_per_year_millions": 1.2,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.44, -4.38]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lagos-Abuja Expressway",
+        "country": "Nigeria",
+        "type": "road",
+        "length_km": 189,
+        "lanes": 4,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[3.4, 6.5], [4.0, 6.8], [4.5, 7.0], [5.0, 7.2], [6.0, 8.0], [6.5, 8.5], [7.0, 8.8], [7.5, 9.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cairo-Alexandria Coastal Road",
+        "country": "Egypt",
+        "type": "road",
+        "length_km": 225,
+        "lanes": 4,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[30.0, 30.0], [30.2, 30.4], [30.4, 30.8], [30.6, 31.2]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nairobi-Mombasa Highway",
+        "country": "Kenya",
+        "type": "road",
+        "length_km": 480,
+        "lanes": 2,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[36.8, -1.3], [37.0, -2.0], [37.5, -3.0], [38.5, -4.0], [40.0, -4.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dar es Salaam-Morogoro-Iringa Highway",
+        "country": "Tanzania",
+        "type": "road",
+        "length_km": 470,
+        "lanes": 2,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[39.2, -6.8], [38.5, -7.5], [37.5, -8.5], [36.0, -10.0], [34.5, -11.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Accra-Kumasi Road",
+        "country": "Ghana",
+        "type": "road",
+        "length_km": 260,
+        "lanes": 2,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[0.0, 5.5], [0.5, 6.5], [0.8, 7.5], [0.7, 8.5], [-0.5, 9.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Johannesburg-Cape Town N1 Route",
+        "country": "South Africa",
+        "type": "road",
+        "length_km": 1400,
+        "lanes": 4,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[28.2, -26.1], [27.5, -27.0], [27.0, -28.5], [26.0, -29.5], [24.0, -30.5], [22.0, -32.0], [21.5, -33.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pan-African Highway 1 North (Ethiopia Segment)",
+        "country": "Ethiopia",
+        "type": "road",
+        "length_km": 800,
+        "lanes": 2,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[39.5, 9.0], [39.0, 8.0], [38.5, 7.0], [38.0, 6.0], [37.5, 5.0], [37.0, 4.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampala-Fort Portal Road",
+        "country": "Uganda",
+        "type": "road",
+        "length_km": 265,
+        "lanes": 2,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[32.5, 0.3], [32.2, 0.8], [31.8, 1.5], [31.0, 2.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kinshasa-Matadi Road",
+        "country": "Democratic Republic of Congo",
+        "type": "road",
+        "length_km": 367,
+        "lanes": 2,
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[15.3, -4.2], [15.0, -5.0], [14.8, -6.0], [14.7, -7.0]]
+      }
+    }
+  ]
+}
