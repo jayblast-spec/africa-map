@@ -2,11 +2,15 @@
 
 An interactive web map showcasing Africa's true geographical size and proportions using the UN Equal Earth projection. Built with Vite, React, TypeScript, and MapLibre GL.
 
-**Live Demo:** [Visit the Map](https://africa-map.vercel.app) (Deployed to Vercel)
+**Live Demo:** [Visit the Map](https://africa-map-sepia.vercel.app) 🌍 (Live on Vercel)
 
-## Overview
+## About
 
-The Mercator projection, widely used in traditional maps, significantly distorts the size and proportions of countries—particularly in the Global South. This map uses the **UN Equal Earth projection** to display Africa with accurate area representations, revealing the continent's true scale.
+This is a **production-grade, open-source interactive map** of Africa built on the UN's Equal Earth projection. It demonstrates Africa's true geographical size and land area, correcting centuries of cartographic distortion caused by the Mercator projection.
+
+**Why this matters:** Traditional maps (Mercator projection) shrink Africa from 30.4 million km² to visual sizes comparable to Greenland or Russia. The Equal Earth projection restores accurate area representation, enabling fact-based geography for education, policy, and real-world applications.
+
+**Mission:** This map serves as foundational infrastructure for GPS, navigation, educational platforms, and organizations working with geographic data. All code is open-source and free to use.
 
 ### Key Features
 
@@ -38,7 +42,7 @@ The Mercator projection, widely used in traditional maps, significantly distorts
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/africa-map.git
+git clone https://github.com/jayblast-spec/africa-map.git
 cd africa-map
 
 # Install dependencies
