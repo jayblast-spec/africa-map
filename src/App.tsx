@@ -2,12 +2,12 @@ import { useRef, MutableRefObject, useEffect, useState } from 'react';
 import { MapContainer } from './components/MapContainer';
 import { ProjectionToggle } from './components/ProjectionToggle';
 import { TimeSeriesSlider } from './components/TimeSeriesSlider';
-import { LayerControls, LayerState } from './components/LayerControls';
+import { LayerControls, type LayerState } from './components/LayerControls';
 import { Legend } from './components/Legend';
 import { useProjection } from './hooks/useProjection';
 import { useTerrainLayer } from './hooks/useTerrainLayer';
 import { useDataLayers } from './hooks/useDataLayers';
-import { DataLayer } from './types/data';
+import type { DataLayer } from './types/data';
 
 export function App() {
   const mapRef = useRef<any | null>(null);
@@ -16,12 +16,12 @@ export function App() {
   const { loadLayer, toggleLayer, visibility } = useDataLayers(mapRef);
 
   const [layersLoaded, setLayersLoaded] = useState(false);
-  const [year, setYear] = useState(2020);
   const [layerVisibility, setLayerVisibility] = useState<LayerState>({
     population: visibility['population-density'] ?? false,
     gdp: visibility['gdp-layer'] ?? false,
     infrastructure: visibility['ports'] ?? false,
   });
+  const [year, setYear] = useState(2020);
 
   // Define data layers with color scales
   const dataLayers: DataLayer[] = [

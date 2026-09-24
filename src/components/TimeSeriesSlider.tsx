@@ -49,7 +49,7 @@ export function TimeSeriesSlider({ year, onYearChange }: TimeSeriesSliderProps) 
         <div className="hidden sm:block text-xs text-gray-600">
           <p className="font-medium mb-2">Year markers (5-year intervals):</p>
           <div className="grid grid-cols-8 gap-1">
-            {YEARS.map((y) => (
+            {YEARS.map((y: number) => (
               <button
                 key={y}
                 onClick={() => onYearChange(y)}
