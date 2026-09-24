@@ -21,7 +21,7 @@ export function TimeSeriesSlider({ year, onYearChange }: TimeSeriesSliderProps) 
   const currentIndex = YEARS.indexOf(year);
 
   return (
-    <div className="absolute bottom-6 left-4 right-4 sm:left-8 sm:right-8 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-2xl p-6 sm:p-8 border border-gray-200 z-10 max-w-2xl mx-auto backdrop-blur-md bg-opacity-98">
+    <div className="bg-gradient-to-br from-blue-50 to-gray-50 rounded-lg p-6 border border-blue-100">
       <div className="flex flex-col gap-6">
         {/* Year Display */}
         <div className="flex items-end justify-between">

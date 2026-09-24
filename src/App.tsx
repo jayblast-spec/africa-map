@@ -163,6 +163,9 @@ export function App() {
               <div className="border-t border-gray-200 pt-6">
                 <LayerControls layerVisibility={layerVisibility} onLayerChange={handleLayerChange} />
               </div>
+              <div className="border-t border-gray-200 pt-6">
+                <TimeSeriesSlider year={year} onYearChange={handleYearChange} />
+              </div>
             </div>
           )}
         </div>
@@ -185,9 +188,6 @@ export function App() {
           <div className="absolute top-6 right-6 z-10">
             <ProjectionToggle projection={projection} onToggle={toggleProjection} />
           </div>
-
-          {/* Time Series Slider (bottom) */}
-          <TimeSeriesSlider year={year} onYearChange={handleYearChange} />
         </div>
       </main>
     </div>
