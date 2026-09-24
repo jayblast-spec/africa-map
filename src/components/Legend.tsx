@@ -44,7 +44,7 @@ export function Legend() {
   };
 
   return (
-    <div className="absolute top-20 left-4 sm:top-24 sm:left-6 bg-white rounded-lg shadow-md border border-gray-200 z-10 max-w-sm max-h-[80vh] overflow-y-auto">
+    <div className="absolute top-20 left-4 sm:top-24 sm:left-6 bg-white rounded-lg shadow-lg border border-gray-300 z-10 max-w-sm max-h-[80vh] overflow-y-auto backdrop-blur-sm bg-opacity-97">
       {/* About Section */}
       <div className="border-b border-gray-200">
         <button

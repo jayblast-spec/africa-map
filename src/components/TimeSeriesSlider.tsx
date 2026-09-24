@@ -21,7 +21,7 @@ export function TimeSeriesSlider({ year, onYearChange }: TimeSeriesSliderProps) 
   const currentIndex = YEARS.indexOf(year);
 
   return (
-    <div className="absolute bottom-6 left-6 right-6 sm:left-8 sm:right-8 bg-white rounded-lg shadow-md p-4 sm:p-6 border border-gray-200 z-10 max-w-full">
+    <div className="absolute bottom-6 left-6 right-6 sm:left-8 sm:right-8 bg-white rounded-lg shadow-lg p-4 sm:p-6 border border-gray-300 z-10 max-w-full backdrop-blur-sm bg-opacity-95">
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between">
           <label htmlFor="year-slider" className="text-sm font-semibold text-gray-700">
@@ -50,10 +50,11 @@ export function TimeSeriesSlider({ year, onYearChange }: TimeSeriesSliderProps) 
 
         <button
           onClick={() => setShowMarkers(!showMarkers)}
-          className="text-xs font-medium text-blue-600 hover:text-blue-800 py-1"
+          className="w-full px-3 py-2 bg-gray-100 hover:bg-gray-200 text-xs font-semibold text-gray-800 rounded-md transition-colors border border-gray-300 flex items-center justify-between"
           type="button"
         >
-          {showMarkers ? '▼' : '▶'} Year markers (5-year intervals)
+          <span>Year Markers</span>
+          <span className="text-sm">{showMarkers ? '▼' : '▶'}</span>
         </button>
 
         {showMarkers && (

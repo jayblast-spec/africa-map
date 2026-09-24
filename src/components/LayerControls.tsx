@@ -37,7 +37,7 @@ export function LayerControls({ layerVisibility, onLayerChange }: LayerControlsP
   );
 
   return (
-    <div className="absolute top-20 right-4 sm:top-24 sm:right-6 bg-white rounded-lg shadow-md border border-gray-200 z-10 max-w-xs">
+    <div className="absolute top-20 right-4 sm:top-24 sm:right-6 bg-white rounded-lg shadow-lg border border-gray-300 z-10 max-w-xs backdrop-blur-sm bg-opacity-97">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full px-4 py-3 sm:px-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
