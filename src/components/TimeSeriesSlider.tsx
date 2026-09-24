@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 interface TimeSeriesSliderProps {
   year: number;
@@ -8,6 +8,8 @@ interface TimeSeriesSliderProps {
 const YEARS = Array.from({ length: 16 }, (_, i) => 1950 + i * 5);
 
 export function TimeSeriesSlider({ year, onYearChange }: TimeSeriesSliderProps) {
+  const [showMarkers, setShowMarkers] = useState(false);
+
   const handleSliderChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const index = parseInt(e.target.value);
@@ -46,8 +48,16 @@ export function TimeSeriesSlider({ year, onYearChange }: TimeSeriesSliderProps) 
           <span>2026</span>
         </div>
 
-        <div className="hidden sm:block text-xs text-gray-600">
-          <p className="font-medium mb-2">Year markers (5-year intervals):</p>
+        <button
+          onClick={() => setShowMarkers(!showMarkers)}
+          className="text-xs font-medium text-blue-600 hover:text-blue-800 py-1"
+          type="button"
+        >
+          {showMarkers ? '▼' : '▶'} Year markers (5-year intervals)
+        </button>
+
+        {showMarkers && (
+        <div className="text-xs text-gray-600">
           <div className="grid grid-cols-8 gap-1">
             {YEARS.map((y: number) => (
               <button
@@ -65,6 +75,7 @@ export function TimeSeriesSlider({ year, onYearChange }: TimeSeriesSliderProps) 
             ))}
           </div>
         </div>
+        )}
       </div>
     </div>
   );
