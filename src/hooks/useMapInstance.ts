@@ -41,11 +41,11 @@ export function useMapInstance(
       bearing: 0,
     });
 
-    // Log when map loads
+    // Apply Equal Earth projection on load
     mapRef.current.on('load', async () => {
       console.log('Map loaded');
-      if (mapRef.current && initialProjection !== 'mercator') {
-        await applyProjection(mapRef.current, initialProjection);
+      if (mapRef.current) {
+        await applyProjection(mapRef.current, 'equalEarth');
       }
     });
 
