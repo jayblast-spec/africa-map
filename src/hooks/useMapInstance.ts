@@ -46,6 +46,10 @@ export function useMapInstance(
       console.log('Map loaded');
       if (mapRef.current) {
         await applyProjection(mapRef.current, 'equalEarth');
+        // Adjust bounds for Equal Earth
+        setTimeout(() => {
+          mapRef.current?.fitBounds([[-20, -40], [60, 40]], { padding: 20 });
+        }, 500);
       }
     });
 
