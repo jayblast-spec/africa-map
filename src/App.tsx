@@ -16,6 +16,7 @@ export function App() {
   const { loadLayer, toggleLayer, visibility } = useDataLayers(mapRef);
 
   const [layersLoaded, setLayersLoaded] = useState(false);
+  const [showDrawer, setShowDrawer] = useState(false);
   const [layerVisibility, setLayerVisibility] = useState<LayerState>({
     population: visibility['population-density'] ?? false,
     gdp: visibility['gdp-layer'] ?? false,
@@ -153,22 +154,41 @@ export function App() {
           Discover Africa&apos;s true geographical size and proportions
         </p>
       </header>
-      <main className="flex-1 w-full relative overflow-hidden">
-        <MapContainer onMapReady={handleMapReady} />
-
-        {/* Legend (top-left) */}
-        <Legend />
-
-        {/* Layer Controls (top-right) */}
-        <LayerControls layerVisibility={layerVisibility} onLayerChange={handleLayerChange} />
-
-        {/* Projection Toggle (below layer controls) */}
-        <div className="absolute top-32 sm:top-40 right-4 sm:right-6 z-10">
-          <ProjectionToggle projection={projection} onToggle={toggleProjection} />
+      <main className="flex-1 w-full flex overflow-hidden">
+        {/* Sidebar Drawer */}
+        <div className={`transition-all duration-300 ${showDrawer ? 'w-80 sm:w-96' : 'w-0'} bg-white border-r border-gray-200 overflow-y-auto shadow-lg`}>
+          {showDrawer && (
+            <div className="p-6 space-y-6">
+              <Legend />
+              <div className="border-t border-gray-200 pt-6">
+                <LayerControls layerVisibility={layerVisibility} onLayerChange={handleLayerChange} />
+              </div>
+            </div>
+          )}
         </div>
 
-        {/* Time Series Slider (bottom) */}
-        <TimeSeriesSlider year={year} onYearChange={handleYearChange} />
+        {/* Map Area */}
+        <div className="flex-1 relative overflow-hidden">
+          <MapContainer onMapReady={handleMapReady} />
+
+          {/* Toggle Drawer Button */}
+          <button
+            onClick={() => setShowDrawer(!showDrawer)}
+            className="absolute top-6 left-4 z-20 bg-white rounded-lg shadow-lg p-3 hover:shadow-xl hover:bg-gray-50 transition-all border border-gray-200"
+            type="button"
+            aria-label="Toggle sidebar"
+          >
+            {showDrawer ? '✕' : '☰'} Info
+          </button>
+
+          {/* Projection Toggle (top-right) */}
+          <div className="absolute top-6 right-6 z-10">
+            <ProjectionToggle projection={projection} onToggle={toggleProjection} />
+          </div>
+
+          {/* Time Series Slider (bottom) */}
+          <TimeSeriesSlider year={year} onYearChange={handleYearChange} />
+        </div>
       </main>
     </div>
   );
