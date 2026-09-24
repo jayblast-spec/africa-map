@@ -1,0 +1,235 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Nigeria",
+        "density_1950": 28,
+        "density_1980": 89,
+        "density_2000": 127,
+        "density_2020": 215,
+        "density_2026": 241,
+        "population_2026": 223000000,
+        "area_km2": 923768
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [2.6667, 4.2],
+          [14.5, 4.2],
+          [14.5, 13.8],
+          [2.6667, 13.8],
+          [2.6667, 4.2]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Ethiopia",
+        "density_1950": 19,
+        "density_1980": 36,
+        "density_2000": 64,
+        "density_2020": 115,
+        "density_2026": 128,
+        "population_2026": 126000000,
+        "area_km2": 1104300
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [33, 3.4],
+          [47.8, 3.4],
+          [47.8, 14.8],
+          [33, 14.8],
+          [33, 3.4]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Egypt",
+        "density_1950": 41,
+        "density_1980": 76,
+        "density_2000": 97,
+        "density_2020": 128,
+        "density_2026": 142,
+        "population_2026": 111000000,
+        "area_km2": 1002000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [24, 22],
+          [34.5, 22],
+          [34.5, 32],
+          [24, 32],
+          [24, 22]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Democratic Republic of Congo",
+        "density_1950": 5,
+        "density_1980": 13,
+        "density_2000": 23,
+        "density_2020": 41,
+        "density_2026": 49,
+        "population_2026": 101000000,
+        "area_km2": 2344858
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [12, -7],
+          [28, -7],
+          [28, 5],
+          [12, 5],
+          [12, -7]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Tanzania",
+        "density_1950": 8,
+        "density_1980": 23,
+        "density_2000": 38,
+        "density_2020": 63,
+        "density_2026": 74,
+        "population_2026": 61000000,
+        "area_km2": 947300
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [29, -12],
+          [40, -12],
+          [40, -1],
+          [29, -1],
+          [29, -12]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "South Africa",
+        "density_1950": 11,
+        "density_1980": 24,
+        "density_2000": 39,
+        "density_2020": 49,
+        "density_2026": 54,
+        "population_2026": 60000000,
+        "area_km2": 1221037
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [16, -35],
+          [33, -35],
+          [33, -22],
+          [16, -22],
+          [16, -35]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Kenya",
+        "density_1950": 9,
+        "density_1980": 28,
+        "density_2000": 52,
+        "density_2020": 93,
+        "density_2026": 107,
+        "population_2026": 53000000,
+        "area_km2": 580367
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [33.8, -4.7],
+          [41.8, -4.7],
+          [41.8, 4.6],
+          [33.8, 4.6],
+          [33.8, -4.7]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Sudan",
+        "density_1950": 4,
+        "density_1980": 8,
+        "density_2000": 14,
+        "density_2020": 28,
+        "density_2026": 32,
+        "population_2026": 46000000,
+        "area_km2": 1861484
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [21.8, 3],
+          [38, 3],
+          [38, 22],
+          [21.8, 22],
+          [21.8, 3]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Uganda",
+        "density_1950": 20,
+        "density_1980": 56,
+        "density_2000": 117,
+        "density_2020": 213,
+        "density_2026": 244,
+        "population_2026": 48000000,
+        "area_km2": 241038
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [29.3, -1.6],
+          [35.1, -1.6],
+          [35.1, 4.2],
+          [29.3, 4.2],
+          [29.3, -1.6]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Ghana",
+        "density_1950": 18,
+        "density_1980": 52,
+        "density_2000": 86,
+        "density_2020": 131,
+        "density_2026": 152,
+        "population_2026": 34000000,
+        "area_km2": 238535
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-3.2, 1.1],
+          [1.1, 1.1],
+          [1.1, 11.1],
+          [-3.2, 11.1],
+          [-3.2, 1.1]
+        ]]
+      }
+    }
+  ]
+}
