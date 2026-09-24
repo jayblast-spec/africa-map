@@ -7,6 +7,52 @@ import { Map } from 'maplibre-gl';
 import { DataLayer } from '../types/data';
 
 /**
+ * Build color expression for population density layer
+ * Uses light yellow → dark red scale based on density_2026
+ */
+function buildPopulationDensityColor(): any[] {
+  return [
+    'interpolate',
+    ['linear'],
+    ['get', 'density_2026'],
+    0,
+    '#ffffcc', // light yellow
+    50,
+    '#ffeda0',
+    100,
+    '#fed976',
+    150,
+    '#feb24c',
+    200,
+    '#fd8d3c',
+    250,
+    '#e31a1c', // dark red
+  ];
+}
+
+/**
+ * Build color expression for GDP layer
+ * Uses light green → dark green scale based on gdp_usd_billions
+ */
+function buildGDPColor(): any[] {
+  return [
+    'interpolate',
+    ['linear'],
+    ['get', 'gdp_usd_billions'],
+    0,
+    '#e5f5e0', // light green
+    100,
+    '#c7e9c0',
+    200,
+    '#a1d99b',
+    300,
+    '#74c476',
+    400,
+    '#31a354', // dark green
+  ];
+}
+
+/**
  * Build paint properties based on layer type and configuration
  */
 function buildPaintProperties(layer: DataLayer): Record<string, any> {
@@ -14,7 +60,14 @@ function buildPaintProperties(layer: DataLayer): Record<string, any> {
 
   switch (layer.type) {
     case 'fill':
-      paint['fill-color'] = layer.paint?.fillColor || layer.color;
+      // Use data-driven color for specific layers
+      if (layer.id === 'population-density') {
+        paint['fill-color'] = buildPopulationDensityColor();
+      } else if (layer.id === 'gdp-layer') {
+        paint['fill-color'] = buildGDPColor();
+      } else {
+        paint['fill-color'] = layer.paint?.fillColor || layer.color;
+      }
       paint['fill-opacity'] = layer.paint?.fillOpacity !== undefined
         ? layer.paint.fillOpacity
         : layer.opacity;
