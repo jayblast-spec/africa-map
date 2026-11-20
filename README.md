@@ -2,7 +2,17 @@
 
 An interactive web map showcasing Africa's true geographical size and proportions using the UN Equal Earth projection. Built with Vite, React, TypeScript, and MapLibre GL.
 
-**Live Demo:** [Visit the Map](https://africa-map-sepia.vercel.app) 🌍 (Live on Vercel)
+**Live demo:** temporarily offline.
+
+## What I built
+
+I built this single-page app with Vite, React 18, TypeScript, Tailwind CSS and MapLibre GL:
+
+- an Equal Earth and Mercator projection toggle;
+- a 1950–2026 time-series slider;
+- layer controls for population density, GDP and infrastructure data, with an interactive legend;
+- a 3D terrain layer;
+- the typed React components and hooks behind them (`src/components`, `src/hooks`).
 
 ## About
 
